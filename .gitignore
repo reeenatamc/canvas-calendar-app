@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entorno Virtual
+.venv/
+venv/
+env/
+
+# Variables de entorno (¡CRUCIAL para tu Cookie!)
+.env
+
+# Base de datos (No subas tu DB local)
+db.sqlite3
+*.sqlite3
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Mac
+.DS_Store
