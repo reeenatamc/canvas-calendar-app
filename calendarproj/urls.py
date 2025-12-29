@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from uni_calendar.views import TaskListView, SyncView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/tasks/', TaskListView.as_view(), name='task-list'),
+    path('api/sync/', SyncView.as_view(), name='sync-canvas'),
 ]
